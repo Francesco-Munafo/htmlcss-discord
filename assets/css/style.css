@@ -65,27 +65,37 @@ body{
   justify-content: space-between;
 }
 
+.center{
+    text-align: center;
+}
+
 /* Flex Grid */
 .container
 {
   max-width: 1170px;
   width: 80%;
   margin: auto;
-  align-items: center;
 }
+
 
 .row {
   display: flex;
+  padding-top: 7rem;
   /* negative margin */
 }
 
+.column{
+    flex-direction: column;
+}
 [class^='col-']
 {
   padding: 0 1rem;
+  
 }
  
 .col-1{
-    width: calc(100% / 12);
+    width: calc(100% / 12 * 3);
+    
 }
 .col-3{
   width: calc(100% / 12 * 3);
@@ -114,6 +124,7 @@ body{
     --disc-main: rgba(37, 94, 233, 1);
     --disc-fontlight: rgba(255, 255, 255, 1);
     --disc-dark: rgba(35, 39, 42, 1);
+    --disc-fontdark: rgba(35, 39, 42, 1);
 }
 /* #endregion Utility */
 
@@ -147,17 +158,32 @@ header {
     padding: 1.5rem;
 }
 
-.login{
+.container.d-flex.py-3>.linklight{
+    align-self: flex-end;
+}
+
+.linklight{
     background-color: white;
     color: var(--disc-dark);
     font-size: 14px;
     padding: 7px 16px;
     border-radius: 2rem;
     text-align: center;
-    width: 90px;
+    width: auto;
     margin-left: 2rem;
+    text-decoration: none;   
+}
 
-    
+.linkdark{
+    background-color: var(--disc-dark);
+    color: white;
+    font-size: 14px;
+    padding: 7px 16px;
+    border-radius: 2rem;
+    text-align: center;
+    width: auto;
+    margin-left: 2rem;
+    text-decoration: none;
 }
 /* #endregion Header */
 
@@ -172,6 +198,43 @@ header {
   color: var(--disc-fontlight);
 }
 
+.jumbotext{
+    text-align: center;
+    
+}
+.jumbotext>h1{
+    line-height: 7rem;
+    font-size: 50px;
+}
+
+.jumbotext>p{
+    margin: 0 5rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500 ;
+}
+
+.fa-solid {
+    padding-right: 0.5rem ;
+}
+
+.card{
+    color: var(--disc-fontdark);
+}
+.card>h2{
+    padding:2rem 0;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.card>p{
+    line-height: 1.8rem;
+    text-align: start;
+}
+
+.h-50>h2,p{
+    padding: 2rem;
+}
 
 
 /* #endregion Main */
@@ -179,7 +242,7 @@ header {
 
 /* #region Footer */
 footer {
-  background-color: darkblue;
+  background-color: var(--disc-dark);
 }
 footer > .top, footer > .bottom {
   padding: 1rem 0;
