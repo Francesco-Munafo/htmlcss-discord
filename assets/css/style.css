@@ -10,6 +10,11 @@ section {
   padding: 2rem 0;
 }
 
+body{
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* #endregion Common */
 
 /* #region Debug */
@@ -66,7 +71,9 @@ section {
   max-width: 1170px;
   width: 80%;
   margin: auto;
+  align-items: center;
 }
+
 .row {
   display: flex;
   /* negative margin */
@@ -76,7 +83,10 @@ section {
 {
   padding: 0 1rem;
 }
-
+ 
+.col-1{
+    width: calc(100% / 12);
+}
 .col-3{
   width: calc(100% / 12 * 3);
 }
@@ -100,12 +110,18 @@ section {
   background-color: #ededed;
 }
 
+:root{
+    --disc-main: rgba(37, 94, 233, 1);
+    --disc-fontlight: rgba(255, 255, 255, 1);
+    --disc-dark: rgba(35, 39, 42, 1);
+}
 /* #endregion Utility */
 
 /* #region Header */
 
 header {
-  background-color: blue;
+  background-color: var(--disc-main);
+  color: var(--disc-fontlight);
 }  
 
 .logo, .login {
@@ -115,17 +131,45 @@ header {
   width: 60%;
   text-align: center;
 }
-.login {
-  text-align: end;
+
+
+.logo{
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 34px;
+    
+}
+
+.links{
+    text-decoration: none;
+    color: var(--disc-fontlight);
+    padding: 1.5rem;
+}
+
+.login{
+    background-color: white;
+    color: var(--disc-dark);
+    font-size: 14px;
+    padding: 7px 16px;
+    border-radius: 2rem;
+    text-align: center;
+    width: 90px;
+    margin-left: 2rem;
+
+    
 }
 /* #endregion Header */
 
 /* #region Main */
 
 .jumbotron {
-  background-color: paleturquoise;
-  height: 450px; /* we might need to keep this */
+  background-color: var(--disc-main);
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  height: 620px; /* we might need to keep this */
   padding: 2rem 0;
+  color: var(--disc-fontlight);
 }
 
 
