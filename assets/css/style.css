@@ -118,8 +118,11 @@ body{
 }
 
 /* Colors */
-.bg_section {
-  background-color: #ededed;
+.bg_section {  
+  background-image: url(../img/wave.svg);
+  
+  
+
 }
 
 :root{
