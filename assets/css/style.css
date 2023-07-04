@@ -68,6 +68,7 @@ body{
 .center{
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 /* Flex Grid */
@@ -194,7 +195,7 @@ header {
     padding: 8px 16px;
     border-radius: 2rem;
     text-align: center;
-    width:auto;
+    width:300px;
     text-decoration: none;
 }
 /* #endregion Header */
@@ -267,7 +268,7 @@ h3{
     background-image: url(../img/stars.svg);    
     font-weight:900;
     font-size: 30px;
-
+    width: 500px;
 }
 
 
@@ -277,10 +278,38 @@ h3{
 
 
 /* #region Footer */
+
+h4{
+    font-size: 25px;
+    color: var(--disc-buttonmain);
+    margin-bottom: 2rem;
+    
+}
+.speak{
+    color: var(--disc-fontlight);
+    margin-top: 2rem;
+}
+.footer-links{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--disc-fontlight);
+    padding: 0;
+    margin: 0;
+}
+.social{
+    padding-top: 1rem;
+}
+.fa-twitter, .fa-instagram, .fa-facebook, .fa-youtube{
+    padding: 0 0.5rem;
+}
+
+.footer-titles{
+    color: var(--disc-buttonmain);
+}
 footer {
   background-color: var(--disc-dark);
 }
-footer > .top, footer > .bottom {
+footer > .top, footer > .bottom, footer .row  {
   padding: 1rem 0;
 }
 
