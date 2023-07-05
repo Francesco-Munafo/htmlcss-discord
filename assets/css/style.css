@@ -13,6 +13,7 @@ section {
 body{
     font-family: 'Fredoka', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    min-width: 1440px;
 }
 
 /* #endregion Common */
@@ -119,10 +120,7 @@ body{
 
 /* Colors */
 .bg_section {  
-  background-image: url(../img/wave.svg);
-  
-  
-
+  background-image: url(../img/wave.svg); 
 }
 
 :root{
@@ -211,7 +209,6 @@ header {
   background-image: url(../img/jumbo.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 620px; /* we might need to keep this */
   padding: 2rem 0;
   color: var(--disc-fontlight);
 }
